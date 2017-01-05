@@ -1,0 +1,20 @@
+ <h1>All the posts in <%= @sub.title %></h1>
+
+<h3>Description:</h3>
+  <p>
+    <%= @sub.description %>
+  </p>
+
+  <ul>
+    <% @sub.posts.each do |post| %>
+      <li><%= link_to "#{post.title}", sub_post_url(@sub.id, post.id) %></li>
+    <% end %>
+  </ul>
+
+
+<%= link_to "Add new Post", new_sub_post_url(@sub.id) %>
+
+<% if current_user.id == @sub.user_id %>
+  <%= link_to "Edit Sub", edit_sub_url(@sub.id) %>
+  <%= link_to "Delete Sub", sub_url(@sub.id), method: :delete %>
+<% end %>

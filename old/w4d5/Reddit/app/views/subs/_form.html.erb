@@ -1,0 +1,19 @@
+<% action = ( subr.id ? sub_url(subr.id) : subs_url ) %>
+<% method = ( subr.id ? "patch" : "post" ) %>
+
+<form action= '<%=action%>', method='post'>
+  <input type="hidden" name="_method" value="<%= method %>">
+
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <label for="title">Title</label><br>
+  <input type="text" name="subr[title]" value='<%= subr.id ? "#{subr.title}" : "" %>'><br><br>
+
+
+  <label for="description">Description</label><br>
+  <input type="text" name="subr[description]" value='<%= subr.id ? "#{subr.description}" : "" %>'><br><br>
+
+  <input type="submit" value="<%= subr.id ? "Save #{subr.title}" : "Create Sub" %>">
+
+
+</form>

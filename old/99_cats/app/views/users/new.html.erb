@@ -1,0 +1,25 @@
+<h1> Create New User </h1>
+
+<form action= "<%=users_url %>" method="post">
+
+  <label for="user_name">Username</label>
+  <input type="text" name="user[user_name]" id="user_name">
+
+  <br>
+  <br>
+
+  <label for="password">Password</label>
+  <input type="text" name="user[password]" id="password">
+
+  <br>
+  <br>
+
+  <input type="submit" value="Create New User">
+
+  <%= auth_token %>
+</form>
+
+<% content_for :footer do %>
+  <p>You are signing up for possibly, maybe, the greatest cat site you
+  will see in the next five minutes.  BELIEVE!</p>
+<% end %>
