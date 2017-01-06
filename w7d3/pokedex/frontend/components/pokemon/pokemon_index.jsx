@@ -16,11 +16,17 @@ class PokemonIndex extends React.Component {
     );
 
     return(
-      <div>
-        {this.props.children}
+      <div className="main" >
+        <div className="list">
+
         <ul className="pokemon-list">
           { pokemonItems }
         </ul>
+
+        </div>
+        <div className="frame"> 
+          {this.props.children}
+        </div>
       </div>
     );
 

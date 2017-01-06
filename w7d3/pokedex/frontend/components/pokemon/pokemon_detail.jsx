@@ -22,7 +22,7 @@ class PokemonDetail extends React.Component {
     const pokemon = this.props.pokemonDetail;
     let items = (<li></li>);
     if (pokemon.items.length > 0) { items =  (
-      <ul>
+      <ul className="eggs">
         <li key={pokemon.items[0].id}>  <img height="100" src={pokemon.items[0].image_url}/></li>
         <li key={pokemon.items[1].id}>  <img height="100" src={pokemon.items[1].image_url}/></li>
         <li key={pokemon.items[2].id}>  <img height="100" src={pokemon.items[2].image_url}/></li>

@@ -27,6 +27,8 @@ body {
   color: $grey;
   font-size: 12px;
   height: 100%;
+
+
 }
 
 header {
@@ -98,10 +100,46 @@ nav {
   padding-top: 20px;
 }
 
+.main {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: flex-start;
+}
+
+.list {
+  display: flex;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+
+  height: 870px;
+  overflow: scroll;
+}
+
+
 .detail-div {
   display: flex;
-  align-items: center;
+  height: 600px;
+  border: 8px solid black;
+  border-radius: 8px;
+  padding: 70px;
+  justify-content: space-around;
 }
+
+.eggs {
+
+}
+
+.frame {
+  border-left: 8px solid white;
+}
+
+ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
 
 h2 {
   font-size: 32px;
