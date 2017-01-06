@@ -96,20 +96,11 @@ nav {
 #root {
   height: 100%;
   padding-top: 20px;
-  img {
-    height: 75;
-    width: auto;
-  }
-  div {
-    ul {
-      li {
-        img {
-          height: 75;
-          width: auto;
-        }
-      }
-    }
-  }
+}
+
+.detail-div {
+  display: flex;
+  align-items: center;
 }
 
 h2 {
@@ -118,6 +109,12 @@ h2 {
 
 h3 {
   font-size: 24px;
+  text-align: center;
+  color: $black;
+}
+
+h4 {
+  font-size: 18px;
   text-align: center;
   color: $black;
 }
