@@ -24,8 +24,8 @@ class PokemonDetail extends React.Component {
     if (pokemon.items.length > 0) { items =  (
       <ul>
         <li key={pokemon.items[0].id}>  <img height="100" src={pokemon.items[0].image_url}/></li>
-      <li key={pokemon.items[1].id}>  <img height="100" src={pokemon.items[1].image_url}/></li>
-      <li key={pokemon.items[2].id}>  <img height="100" src={pokemon.items[2].image_url}/></li>
+        <li key={pokemon.items[1].id}>  <img height="100" src={pokemon.items[1].image_url}/></li>
+        <li key={pokemon.items[2].id}>  <img height="100" src={pokemon.items[2].image_url}/></li>
     </ul>
   );}
 
